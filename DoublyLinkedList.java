@@ -58,7 +58,7 @@ public class DoublyLinkedList<T> implements List<T> {
 		Node current = head;
 
         while (current != null) {
-            System.out.print(current.data + " ");
+            System.out.print(current.data);
             current = current.next;
         }
 
@@ -70,7 +70,7 @@ public class DoublyLinkedList<T> implements List<T> {
 	public void printBackwards() {
 		Node current = tail;
         while (current != null) {
-            System.out.print(current.data + " ");
+            System.out.print(current.data);
             current = current.previous;
         }
         System.out.println(); 
