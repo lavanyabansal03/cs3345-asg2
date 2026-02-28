@@ -7,7 +7,7 @@ public class DoublyLinkedListTest {
 		
 		//testPrintEmptyListForward();
 		//testPrintEmptyListBackward();
-		 testEmptyGet();
+		// testEmptyGet();
 		// testAddFirstAndGet();
 		// testAddFirstForwards();
 		// testAddFirstBackwards();
@@ -16,14 +16,14 @@ public class DoublyLinkedListTest {
 		// testAddLastBackwards();
 		 testIsEmpty();
 		 testGetLength();
-		// testRemoveFromEmptyList();
-		// testRemoveFromListWithOneElementNegative();
-		// testRemoveFromListWithOneElementPositive();
-		// testRemoveFromListWithTwoElementNegative();
-		// testRemoveFromListWithTwoElementPositive();
-		// testRemoveFromListWithThreeElementNegative();
-		// testRemoveFromListWithThreeElementPositive();
-		// testIterator();
+		 testRemoveFromEmptyList();
+		 testRemoveFromListWithOneElementNegative();
+		 testRemoveFromListWithOneElementPositive();
+		 testRemoveFromListWithTwoElementNegative();
+		 testRemoveFromListWithTwoElementPositive();
+		 testRemoveFromListWithThreeElementNegative();
+		 testRemoveFromListWithThreeElementPositive();
+		 testIterator();
 		
 
 	}
