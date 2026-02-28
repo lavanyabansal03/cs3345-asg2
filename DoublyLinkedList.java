@@ -10,21 +10,47 @@ public class DoublyLinkedList<T> implements List<T> {
 	
 	@Override
 	public void addLast(T item) {
-		// TODO 
-			
+		Node newnode = new Node(item);
+		if (isEmpty()) {
+			head = newnode;
+			tail = newnode;
+		} 
+		else {
+			newnode.previous = tail;
+			tail.next = newnode;
+			tail = newnode;
+		}
+		numberOfElements++;
 	}
 
 	@Override
 	public void addFirst(T item) {
-		// TODO 
+		Node newnode = new Node(item);
+		if (isEmpty()) {
+			head = newnode;
+			tail = newnode;
+		} 
+		else {
+			newnode.next = head;
+			head.previous = newnode;
+			head = newnode;
+		}
+		numberOfElements++;
 		
 			
 	}
 
 	@Override
 	public T get(int position) {
-		// TODO 
-		return null; 
+		if (position < 0 || position >= numberOfElements) {
+			
+		return null; }
+		Node current = head;
+		
+		for (int i = 0; i < position; i++) {
+			current = current.next;
+		}
+		return current.data;
 	}
 
 	@Override
@@ -60,13 +86,12 @@ public class DoublyLinkedList<T> implements List<T> {
 
 	@Override
 	public boolean isEmpty() {
-		// TODO 
-		return true; 
+		return numberOfElements == 0;
+		 
 	}
 
 	@Override
-	public int getLength() {
-		// TODO 
+	public int getLength() { 
 	    return numberOfElements;
 	}
 	

@@ -5,17 +5,17 @@ public class DoublyLinkedListTest {
 		
 		// Comment only the test functions you want to run
 		
-		// testPrintEmptyListForward();
-		// testPrintEmptyListBackward();
-		// testEmptyGet();
+		//testPrintEmptyListForward();
+		//testPrintEmptyListBackward();
+		 testEmptyGet();
 		// testAddFirstAndGet();
 		// testAddFirstForwards();
 		// testAddFirstBackwards();
 		// testAddLastAndGet();
 		// testAddLastForwards();
 		// testAddLastBackwards();
-		// testIsEmpty();
-		// testGetLength();
+		 testIsEmpty();
+		 testGetLength();
 		// testRemoveFromEmptyList();
 		// testRemoveFromListWithOneElementNegative();
 		// testRemoveFromListWithOneElementPositive();
@@ -33,7 +33,8 @@ public class DoublyLinkedListTest {
         list.print();
 	}
 	public static void testPrintEmptyListBackward() {
-		//TODO
+		List<String> list = new DoublyLinkedList<String>();
+        list.printBackwards();
 	}
 	
 	public static void testEmptyGet() {
