@@ -29,7 +29,8 @@ public class DoublyLinkedListTest {
 	}
 	
 	public static void testPrintEmptyListForward() {
-		//TODO
+		List<String> list = new DoublyLinkedList<String>();
+        list.print();
 	}
 	public static void testPrintEmptyListBackward() {
 		//TODO

@@ -29,13 +29,25 @@ public class DoublyLinkedList<T> implements List<T> {
 
 	@Override
 	public void print() {
-		// TODO
+		Node current = head;
+
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+
+        System.out.println();
 				
 	}
 
 	@Override
 	public void printBackwards() {
-		// TODO 
+		Node current = tail;
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.previous;
+        }
+        System.out.println(); 
 			
 	}
 
@@ -55,7 +67,7 @@ public class DoublyLinkedList<T> implements List<T> {
 	@Override
 	public int getLength() {
 		// TODO 
-	
+	    return numberOfElements;
 	}
 	
 	/** 
